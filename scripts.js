@@ -1,3 +1,9 @@
+const menuToggle = document.getElementById("menuToggle");
+const dropdownMenu = document.getElementsByClassName("dropdownMenu")[0];
+menuToggle.addEventListener("click", function(){
+    dropdownMenu.classList.toggle("showMenu");
+});
+
 function validation() {
     var name = document.getElementById("name").value;
     var subject = document.getElementById("subject").value;
