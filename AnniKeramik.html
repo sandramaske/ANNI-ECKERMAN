@@ -1,126 +1,178 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-<title>Anni Eckerman Ceramics</title>
-<meta charset="UTF-8">
-<script src="scripts.js" async defer></script>
-<link rel="stylesheet" type="text/css" href="AnniKeramikStyle.css"/>
-</head>
+  <head>
+    <title>Anni Eckerman Ceramics</title>
+    <meta charset="UTF-8" />
+    <script src="scripts.js" async defer></script>
+    <link rel="stylesheet" type="text/css" href="AnniKeramikStyle.css" />
+  </head>
 
-<body>
- <nav>
-    <div class="dropdown"> 
-        <div class="products">
-            <button id="menuToggle">Menu</button>
-            <ul class="dropdownMenu">
-                <li><a href="#">New arrivals</li></a>
-                <li><a href="#">Ceramic seashells</a></li>
-                <li><a href="#">Candlesick</a></li>
-                <li><a href="#">Flower pots</a></li>
-                <li><a href="#">Kitchen supplies</a></li>
-                <li><a href="#">Vases</a></li>
-            </ul> 
+  <body>
+    <nav class="dropdown">
+      <div class="products">
+        <button id="menuToggle">Menu</button>
+        <ul class="dropdownMenu">
+          <li><a href="#">New arrivals</a></li>
+          <li><a href="#">Ceramic seashells</a></li>
+          <li><a href="#">Candlesick</a></li>
+          <li><a href="#">Flower pots</a></li>
+          <li><a href="#">Kitchen supplies</a></li>
+          <li><a href="#">Vases</a></li>
+        </ul>
+      </div>
+
+      <div class="home" tabindex="0">Anni Eckerman Ceramics</div>
+
+      <div>
+        <button tabindex="0">Bag</button>
+      </div>
+    </nav>
+
+    <div class="flex-container margin_medium">
+      <div class="flex-item-1">
+        <div>
+          <img
+            tabindex="0"
+            src="./Pictures/AnniEckerman_Kitchen_1.jpg"
+            alt="Picture of kitchen supplies"
+          />
+          <div class="text-container-item1">
+            <h1 tabindex="0">Kitchen supplies</h1>
+            <p class="link">View more</p>
+          </div>
         </div>
+      </div>
 
-    <div class="home" tabindex="0"> Anni Eckerman Ceramics </div>
-
-    <div>
-    <button tabindex="0">Bag</button>
-    </div>
-    </div> 
-</div>
-</nav>  
-
-<div class="flex-container">
-    <img tabindex="0"  class="flex-item-1" src= "./Pictures/AnniEckerman_Kitchen_1.jpg" alt="Picture of kitchen supplies">
-    <img tabindex="0"  class="flex-item-1" src="./Pictures/AnniEckerman_Pots_2.jpg" alt="Picture of ceramic flowerpot">
-</div>  
-
-<div class="flex-container">
-    <div class="flex-item-1 text-container-item1">
-    <h1 tabindex="0" >Kitchen supplies</h1>
-    <p class="link">View more</p>
-    </div>
-
-    <div class="flex-item-1 text-container-item1">
-    <h1 tabindex="0" >New arrivals</h1>
-    <p class="link">View more</p>
-    </div>
-</div>
-
-
-<div class="margin_medium"></div>
-
-<div class="flex-container">
-    <img tabindex="0" class="flex-item-2" src= "./Pictures/AnniEckerman_Seashells_1.jpg" alt="Picture of ceramic seashells">
-    <img tabindex="0" class="flex-item-2" src="./Pictures/AnniEckerman_Vases_1.jpg" alt="Picture of ceramic vases">
-    <img tabindex="0" class="flex-item-2" src="./Pictures/AnniEckerman_CandleHolders_1.jpg" alt="Picture of candle holders">
-    <img tabindex="0" class="flex-item-2" src="./Pictures/AnniEckerman_Pots_1.jpg" alt="Picture of flowerpot">
-</div>
-
-<div class=flex-container>
-    <div class="flex-item-2 text-container-item2">
-    <h1 tabindex="0">Ceramic seashells</h1>
-    <p class="link" tabindex="0">View more</p>
-    </div>
-
-    <div class="flex-item-2 text-container-item2">
-    <h1 class="flex-item-2" tabindex="0">Vases</h1>
-    <p tabindex="0" class="link">View more</p>
-    </div>
-
-    <div class="flex-item-2 text-container-item2">
-    <h1 tabindex="0" class="flex-item-2">Candlestick</h1>
-    <p tabindex="0" class="link">View more</p>
-    </div>
-
-    <div class="flex-item-2 text-container-item2">
-    <h1 tabindex="0" class="flex-item-2">Flowerpots</h1>
-    <p tabindex="0" class="link">View more</p>
-    </div>
-</div>
-
-<div class="margin_medium"></div>
-
-<div tabindex="0" class="info-block"><h2>Anni Eckerman is a ceramic artist based in Stockholm, Sweden. She started her ceramics journey in 2017 as an effect of mostly working infront of the computer. She found working with her hands very soothing and began to learn various techniques within ceramics. All products are handmade in Sweden by Anni and her team.</h2> <br>
- <a tabindex="0" href="https://www.instagram.com/anni.keramik/" target="_blank"><h2 class="link">Check out our Instagram</h2></a>
-</div>
-
-<div class=flex-container tabindex="0"> 
-<div class="wrapper">
-    <h1 tabindex="0">Contact us</h1>
-    <div id="error_message"></div>
-    <form id="myform" onsubmit="return validation ()">
-        <div class="input-field">
-            <input for="Name" type="text" placeholder="Name" id="name">
+      <div class="flex-item-1">
+        <div>
+          <img
+            tabindex="0"
+            src="./Pictures/AnniEckerman_Pots_2.jpg"
+            alt="Picture of ceramic flowerpot"
+          />
+          <div class="flex-item-1 text-container-item1">
+            <h1 tabindex="0">New arrivals</h1>
+            <p class="link">View more</p>
+          </div>
         </div>
-        <div class="input-field">
-            <input for="Subject" type="text" placeholder="Subject" id="subject">
-        </div>
-        <div class="input-field">
-            <input for="Phone" type="text" placeholder="Phone" id="phone">
-        </div>
-        <div class="input-field">
-            <input for="Email" type="text" placeholder="Email" id="email">
-        </div>
-        <div class="input-field">
-            <textarea for="Message" id="message" placeholder="Message"></textarea>
-        </div>
-        <div class="btn">
-            <input for="Submit" type="Submit">
-        </div>
-    </form>
+      </div>
     </div>
-<div class="flex-item-1">
-<img tabindex="0" src="Pictures/AnniEckerman_Vases_2.jpg" alt="Picture of vase">
-</div>
-<div id="footer">
+
+    <div class="flex-container">
+      <img
+        tabindex="0"
+        class="flex-item-2"
+        src="./Pictures/AnniEckerman_Seashells_1.jpg"
+        alt="Picture of ceramic seashells"
+      />
+      <img
+        tabindex="0"
+        class="flex-item-2"
+        src="./Pictures/AnniEckerman_Vases_1.jpg"
+        alt="Picture of ceramic vases"
+      />
+      <img
+        tabindex="0"
+        class="flex-item-2"
+        src="./Pictures/AnniEckerman_CandleHolders_1.jpg"
+        alt="Picture of candle holders"
+      />
+      <img
+        tabindex="0"
+        class="flex-item-2"
+        src="./Pictures/AnniEckerman_Pots_1.jpg"
+        alt="Picture of flowerpot"
+      />
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item-2 text-container-item2">
+        <h1 tabindex="0">Ceramic seashells</h1>
+        <p class="link" tabindex="0">View more</p>
+      </div>
+
+      <div class="flex-item-2 text-container-item2">
+        <h1 class="flex-item-2" tabindex="0">Vases</h1>
+        <p tabindex="0" class="link">View more</p>
+      </div>
+
+      <div class="flex-item-2 text-container-item2">
+        <h1 tabindex="0" class="flex-item-2">Candlestick</h1>
+        <p tabindex="0" class="link">View more</p>
+      </div>
+
+      <div class="flex-item-2 text-container-item2">
+        <h1 tabindex="0" class="flex-item-2">Flowerpots</h1>
+        <p tabindex="0" class="link">View more</p>
+      </div>
+    </div>
+
+    <div tabindex="0" class="info-block">
+      <h2>
+        Anni Eckerman is a ceramic artist based in Stockholm, Sweden. She
+        started her ceramics journey in 2017 as an effect of mostly working
+        infront of the computer. She found working with her hands very soothing
+        and began to learn various techniques within ceramics. All products are
+        handmade in Sweden by Anni and her team.
+      </h2>
+      <br />
+      <a
+        tabindex="0"
+        href="https://www.instagram.com/anni.keramik/"
+        target="_blank"
+        ><h2 class="link">Check out our Instagram</h2></a
+      >
+    </div>
+
+    <div class="flex-container" tabindex="0">
+      <div class="wrapper">
+        <h1 tabindex="0">Contact us</h1>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation ()">
+          <div class="input-field">
+            <input for="Name" type="text" placeholder="Name" id="name" />
+          </div>
+          <div class="input-field">
+            <input
+              for="Subject"
+              type="text"
+              placeholder="Subject"
+              id="subject"
+            />
+          </div>
+          <div class="input-field">
+            <input for="Phone" type="text" placeholder="Phone" id="phone" />
+          </div>
+          <div class="input-field">
+            <input for="Email" type="text" placeholder="Email" id="email" />
+          </div>
+          <div class="input-field">
+            <textarea
+              for="Message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="btn">
+            <input for="Submit" type="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="flex-item-1">
+      <img
+        tabindex="0"
+        src="Pictures/AnniEckerman_Vases_2.jpg"
+        alt="Picture of vase"
+      />
+    </div>
+    <div id="footer">
       <p tabindex="0">About</p>
       <p tabindex="0">Shipping</p>
       <p tabindex="0">T&C</p>
       <p tabindex="0">Privacy Policy</p>
       <p tabindex="0">© 2021</p>
     </div>
-
-</body>
+  </body>
 </html>

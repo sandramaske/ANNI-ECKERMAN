@@ -137,7 +137,7 @@ button {
 }
 
 .margin_medium {
-  height: 80px;
+  margin-bottom: 80px;
 }
 .info-block {
   background-color: rgb(209, 255, 241);
@@ -148,6 +148,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.flex-container--row {
+  flex-direction: row;
 }
 
 .flex-item-1 {
