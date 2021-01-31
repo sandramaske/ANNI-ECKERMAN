@@ -41,6 +41,11 @@ img {
   width: 100%;
 }
 
+.image-cover {
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Menu */
 a,
 button {
@@ -79,13 +84,13 @@ button {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-10px);
-  transition: all 0.4s ease;
 }
 
 .showMenu {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0px);
+  transition: all 0.4s ease;
 }
 
 .products a,
@@ -124,13 +129,6 @@ button {
   color: rgb(24, 71, 223);
 }
 
-.products button:focus + ul,
-.products a:focus {
-  opacity: 1;
-  pointer-events: all;
-  transform: translateY(0px);
-}
-
 .home {
   font-family: Customfont;
   font-size: 30px;
@@ -148,10 +146,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.flex-container--row {
-  flex-direction: row;
 }
 
 .flex-item-1 {
@@ -267,9 +261,6 @@ button {
 }
 
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
-  }
   .flex-item-1 {
     width: 100%;
   }
@@ -294,5 +285,9 @@ button {
 
   .home {
     font-size: 25px;
+  }
+
+  .margin_medium {
+    margin-bottom: 40px;
   }
 }
